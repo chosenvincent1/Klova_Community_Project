@@ -1,0 +1,396 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .the-boss {
+    background: #ffffff;
+  }
+  .the-boss .holding-everything {
+    padding: 0px 38px;
+  }
+  /* the map and form section of this website */
+  .parent-map {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+  
+    width: 100%;
+  height: 823px;
+  gap: 0px;
+  opacity: 0px;
+  
+  }
+  .parent-map .form-box {
+    border-right: 1px solid #7e838f;
+    height: 600px;
+    width: 600px;
+  }
+  .parent-map .img-cont img {
+    width: 100%;
+    border-radius: 16px 0px 0px 0px;
+    opacity: 0px;
+  }
+  .parent-map .img-cont{
+    width: 600px;
+    height: 600px;
+    }
+  .parent-map .now-cover {
+    margin-right: 30px;
+  }
+  .parent-map .heading-cont p {
+    width: 579.61px;
+    height: 51px;
+    top: 134px;
+    left: 50px;
+    gap: 0px;
+    opacity: 0px;
+    font-size: 16px;
+  }
+  .parent-map .heading-cont h3 {
+    width: 301.44px;
+    height: 42px;
+    top: 80px;
+    left: 50px;
+    gap: 0px;
+    opacity: 0px;
+  }
+  form .myput-first{
+      padding-top: 30px;
+  }
+  .parent-map input[type="text"] {
+    width: 100%;
+    height: 50px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #7e838f;
+  }
+  .parent-map form .holding-two-form {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .parent-map input[type="email"] {
+    width: 100%;
+    height: 50px;
+    flex: 1;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #7e838f;
+  }
+  .parent-map input[type="number"] {
+    width: 100%;
+    height: 50px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #7e838f;
+  }
+  .parent-map textarea {
+    width: 100%;
+    height: 70px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #7e838f;
+  }
+  .parent-map form .holding-two-form .email-input {
+    width: 100%;
+  }
+  .parent-map form .holding-two-form .email-input label {
+    display: block;
+    align-items: center;
+  }
+  .parent-map form .holding-two-form .number-input {
+    width: 100%;
+  }
+  .parent-map form .holding-two-form .number-input label {
+    display: block;
+    align-items: center;
+  }
+  .check-box-side .checking {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .check-box-side .checking .check-1,
+  p,
+  .check-2,
+  p,
+  .check-3,
+  p,
+  .check-4,
+  p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-transform: capitalize;
+    font-family: Switzer;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #121212;
+  }
+  .btn-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+  
+    padding: 16px 31.99px 16px 32px;
+  
+    border-radius: 12px;
+    background: #ff4337;
+  }
+  .btn-box button {
+    border: 0;
+    outline: 0;
+    background: transparent;
+  }
+  .btn-box button a {
+    color: #ffffff;
+    margin-right: 10px;
+  }
+  
+  /* the build with us section of this website */
+  .build {
+    text-align: center;
+    background: #1c070f;
+    width: Fixed (1, 390px) px;
+    height: Fixed (703px) px;
+    top: 64px;
+    left: 25px;
+    padding: 50px 200px 50px 200px;
+    gap: 10px;
+    border-radius: 20px;
+    opacity: 0px;
+    margin-bottom: 80px;
+  }
+  .build .text-build h1 {
+    font-family: Switzer;
+    font-size: 72px;
+    font-weight: 600;
+    line-height: 84px;
+    letter-spacing: -0.03em;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #ffffff;
+  }
+  .build .text-build p {
+    font-family: Switzer;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 31.68px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #ffffff;
+  }
+  .build .btn-sec {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+  }
+  .build .btn-sec .first-btn {
+    width: Fixed (230px) px;
+    height: Hug (60px) px;
+    padding: 10px 20px 10px 20px;
+    gap: 16px;
+    border-radius: 12px;
+    opacity: 0px;
+    background: #ff4337;
+    display: flex;
+    align-items: center;
+  }
+  .build .btn-sec button {
+    background: transparent;
+    outline: none;
+    border: none;
+  }
+  .build .btn-sec .first-btn a {
+    font-family: Switzer;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #ffffff;
+  }
+  
+  .build .btn-sec .second-btn {
+    width: Fixed (230px) px;
+    height: Hug (60px) px;
+    padding: 10px 20px 10px 20px;
+    border-radius: 12px;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+  }
+  .build .btn-sec .second-btn a {
+    font-family: Switzer;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #121212;
+    margin-right: 10px;
+  }
+  /* from here downward we have the footer then the up is build with us */
+  
+  a {
+    text-decoration: none;
+  }
+  footer .news {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 116px;
+    background: #ffeceb;
+    border-radius: 10px;
+    padding: 0px 38px;
+    margin-bottom: 50px;
+  }
+  footer .news .cont h2 {
+    font-family: "Switzer";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    text-transform: capitalize;
+    color: #121212;
+    width: 124px;
+    height: 32px;
+  }
+  footer .news .cont {
+    width: 801px;
+  }
+  footer .news .cont p {
+    font-family: "Switzer";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #7e838f;
+  }
+  footer .news .input-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 6px 0px 24px;
+    gap: 8px;
+    background: #ffffff;
+    width: 457px;
+    height: 48px;
+    background: #ffffff;
+    border-radius: 8px;
+  }
+  footer .news .input-container input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 38px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 0px;
+    gap: 10px;
+    width: 307px;
+    height: 36px;
+    outline: 0;
+    border: 0;
+  }
+  footer .news .input-container button {
+    width: 94px;
+    height: 36px;
+    background: #ff4337;
+    border-radius: 4px;
+    outline: 0;
+    border: 0;
+  }
+  
+  /* the main footer section of this website */
+  .cover {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding: 0px 38px;
+    padding-top: 40px;
+  }
+  .cover .first-content-1 {
+    line-height: 24px;
+  }
+  .cover .first-content-1 p {
+    color: #7e838f;
+  }
+  .cover .logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  .cover .logo h2 {
+    margin-left: 10px;
+  }
+  .cover .main-side {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .main-side,
+  span,
+  li {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    list-style: none;
+  }
+  .main-side span ul li {
+    line-height: 30px;
+  }
+  .main-side span li a {
+    color: #9a9ea6;
+    text-transform: capitalize;
+  }
+  .main-side header {
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+  }
+  /* the last section of this website */
+  .last-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 38px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+  .last-footer p {
+    font-family: Switzer;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21.12px;
+    text-align: right;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #7e838f;
+  }
+  
