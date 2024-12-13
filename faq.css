@@ -1,0 +1,364 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    font-family: 'Switzer', Arial, Helvetica, sans-serif;
+    padding: 10px;
+}
+
+h1 {
+    font-size: 72px;
+}
+
+header {
+    width: 845px;
+}
+
+.introduction {
+    font-size: 18px;
+    line-height: 32px;
+}
+
+.talkToUsHeader {
+    display: none;
+}
+
+.questionsContainer {
+    display: block;
+    margin-top: 30px;
+}
+
+.appQuestions {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 10px;
+    background-color: #FBF3E3;
+    padding: 20px;
+    border-radius: 20px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+.questionHeader {
+    width: 50vw;
+}
+
+.faqText {
+    font-size: 10px;
+    background-color: #FB761F;
+    color: white;
+    padding: 5px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+.questionHeaderText {
+    margin-bottom: 10px;
+    font-size: 58px;
+    font-weight: 600;
+}
+
+.questionTalkToUs {
+    border: 1px solid grey;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+}
+
+.question {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.questionList {
+    background-color: white;
+    padding: 10px;
+    border-radius: 15px;
+    list-style: none;
+    width: 640px;
+}
+
+.questionTitle {
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.show, .hide {
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+.hide {
+    display: none;
+}
+
+.questionBody {
+    display: none;
+}
+
+.blue {
+    background-color: #36c5F0;
+}
+
+.general {
+    background-color: #EBF9FD;
+}
+
+.pricing {
+    background-color: #EFF1F7;
+}
+
+.black {
+    background-color: black;
+}
+
+/* Build with us   */
+.buildWithUs {
+    width: 100%;
+    height: 600px;
+    background-color: rgb(44, 14, 31);
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.buildHeader {
+    color: white;
+    font-size: 50px;
+    margin-bottom: 15px;
+    font-size: 72px;
+    font-weight: 600;
+}
+
+.buildDescription {
+    color: white;
+    font-size: 24px;
+    font-weight: 300;
+    width: 771px;
+    margin-bottom: 30px;
+}
+
+.contactUs, .contactUs a,  .services, .services a{
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    margin-right: 10px;
+    width: 89px;
+}
+
+.services {
+    background-color: white;
+    color: black;
+}
+
+.newsLetter {
+    background-color: #FFECEB;
+    border-radius: 15px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.newsHeader {
+    color: black;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.newsDescription {
+    display: block;
+    font-weight: 400;
+    font-size: 14px;
+    color: #7E838F;
+}
+
+.email {
+    background-color: white;
+    width: 457px;
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    position: relative;
+}
+
+#email {
+    outline: white;
+    border: none;
+    padding: 5px;
+    width: 400px;
+    overflow: hidden;
+    font-size: 18px;
+}
+
+#submit {
+    position: absolute;
+    right: 5px;
+    align-self: center;
+    background-color: red;
+    padding: 10px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    width: 94px;
+    font-weight: 700;
+}
+
+/* Font awesome icons */
+.icon {
+    margin: 3px;
+    color: #7E838F;
+}
+
+.contactArrow {
+    color: white;
+}
+
+.arrow {
+    color: rgba(0, 0, 0, 0.556);
+}
+
+/* Mobile screen <= 550px */
+@media screen and (max-width: 550px){
+
+    header {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 43px;
+    }
+
+    .introduction {
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .talkToUsHeader {
+        display: flex;
+        width: 100%;
+        text-decoration: none;
+        color: black;
+        font-size: 16px;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        border: 1px solid #C8C8C1;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .appQuestions {
+        flex-direction: column;
+    }
+
+    .questionHeader {
+        width: 100%;
+    }
+
+    .questionHeaderText {
+        font-size: 32px;
+        margin-top: 5px;
+        font-weight: 600;
+    }
+
+    .questionTalkToUs {
+        display: none;
+    }
+
+    .question {
+        width: 100%;
+    }
+
+    .questionList {
+        width: 100%;
+    }
+
+    .questionTitle {
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .questionBody {
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .buildWithUs {
+        height: 450px;
+        margin-top: 40px;
+        justify-content: flex-start;
+
+    }
+
+    .buildWithUs img {
+        width: 74px;
+        height: 74px;
+    }
+
+    .buildHeader {
+        font-size: 36px;
+        font-weight: 600;
+        margin-top: 40px;
+    }
+
+    .buildDescription {
+        width: 100%;
+        font-size: 16px;
+        font-weight: 300;
+        margin-bottom: 50px;
+    }
+
+    .contact_services {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .contactUs, .services {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .newsLetter {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .newsDescription {
+        width: 100%;
+        margin-top: 5px;
+        margin-bottom: 15px;
+    }
+
+    .email {
+        width: 100%;
+
+    }
+}
