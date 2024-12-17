@@ -8,8 +8,54 @@
   </head>
   <body>
     <!-- contact setup -->
+    <nav class="navbar">
+      <div class="logo">
+        <svg width="149" height="149" viewBox="0 0 149 149" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M74.5002 37.25L105.542 18.625L136.583 37.25V111.75L105.542 130.375L43.4585 93.125V55.875L105.542 93.125V55.875L74.5002 37.25Z"
+            fill="#FF4337" />
+          <path opacity="0.4"
+            d="M74.4998 111.75L43.4582 130.375L12.4165 111.75V37.25L43.4582 18.625L105.542 55.875V93.125L43.4582 55.875V93.125L74.4998 111.75Z"
+            fill="#FF4337" />
+        </svg>
+        <span>Klovax</span>
+      </div>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Blog</a></li>
+        <button class="contact-btn">Contact Us</button>
+      </ul>
+     
+      <div class="mobile-menu">
+        <ul>
+          <li><a href="#">Home Page</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+    </nav>
     <section class="the-boss">
+     
       <section class="holding-everything">
+        <!-- the contact form -->
+         <div class="heading-section">
+            <div class="the-head-itself">
+                <h2>Contact</h2>
+                
+                <p>We are committed to going beyond issue resolution to becoming your partner in the growing and smooth running of your business.</p>
+            </div>
+            <div class="clients-cont">
+                <img src="./asesst/clinets discussing img.png" alt="">
+            </div>
+         </div>
         <!-- the section that has to do with map and its functionalties -->
         <div class="parent-map">
           <div class="form-box">
@@ -24,47 +70,54 @@
               </div>
               <div class="main-form">
 
-                <form>
+                <form id="validationForm">
                     <div class="myput-first">
                   <label>Full Name</label>
-                  <input type="text">
+                  <input type="text" id="name">
+                  <div class="error-message" id="nameError"></div>
                 </div>
                   <div class="holding-two-form">
                     <div class="email-input">
                       <label>Email</label>
-                      <input type="email" />
+                      <input type="email" id="email">
+                      <div class="error-message" id="phoneError"></div>
                     </div>
-                    <div class="number-input">
+                    <div class="number-input" id="Phone">
                       <label>Phone number</label>
                       <input type="number" />
+                      <div class="error-message" id="emailError"></div>
                     </div>
                   </div>
                   <div class="check-box-side">
                     <p>What are you interested in?</p>
                     <div class="checking">
                       <div class="check-1">
-                        <input type="checkbox" name="" id="" />
+                        <input type="checkbox" name="" id="checkbox">
                         <p>new work</p>
+                        <div class="error-message" id="checkboxError"></div>
                       </div>
                       <div class="check-2">
-                        <input type="checkbox" name="" id="" />
+                        <input type="checkbox" name="" id="checkbox" />
                         <p>Existing work</p>
+                        <div class="error-message" id="checkboxError"></div>
                       </div>
                       <div class="check-3">
-                        <input type="checkbox" name="" id="" />
-                        <p>Your agency</p>
+                        <input type="checkbox" name="" id="checkbox" />
+                        <p>Your agency</p> <div class="error-message" id="checkboxError"></div>
                       </div>
                       <div class="check-4">
-                        <input type="checkbox" name="" id="" />
+                        <input type="checkbox" name="" id="checkbox" />
                         <p>just chat</p>
+                        <div class="error-message" id="checkboxError"></div>
                       </div>
                     </div>
                   </div>
 
-                  <label>message</label><br /><br />
-                  <textarea></textarea><br /><br />
+                  <label>message</label><br><br>
+                  <textarea id="message"></textarea><br><br>
+                  <div class="error-message" id="messageError"></div>
                   <div class="btn-box">
-                    <button type="submit"><a href="#">Send message</a></button>
+                    <button type="submit"><a href="">Send message</a></button>
                     <svg
                       width="24"
                       height="24"
@@ -322,5 +375,6 @@
         </footer>
       </section>
     </section>
+    <script src="contact.js"></script>
   </body>
 </html>
