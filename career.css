@@ -147,8 +147,8 @@ h3 {
 }
 .div5 {
     margin: 50px;
-    display: flex;
     background-color: #FFECEB;
+    display: flex;
     height: 20vh;
 }
 .news {
