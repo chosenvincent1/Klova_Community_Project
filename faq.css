@@ -16,6 +16,7 @@ h1 {
 
 header {
     width: 845px;
+    padding: 30px;
 }
 
 .introduction {
@@ -38,7 +39,7 @@ header {
     flex-wrap: nowrap;
     gap: 10px;
     background-color: #FBF3E3;
-    padding: 20px;
+    padding: 50px;
     border-radius: 20px;
     margin-left: 10px;
     margin-bottom: 20px;
@@ -84,6 +85,7 @@ header {
     border-radius: 15px;
     list-style: none;
     width: 640px;
+    align-items: center;
 }
 
 .questionTitle {
@@ -94,6 +96,7 @@ header {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
+    align-items: center;
 }
 
 .show, .hide {
@@ -142,6 +145,10 @@ header {
     margin-bottom: 30px;
 }
 
+.buildImg {
+    margin-bottom: 70px;
+}
+
 .buildHeader {
     color: white;
     font-size: 50px;
@@ -162,7 +169,7 @@ header {
     background-color: red;
     color: white;
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 20px 40px;
     border-radius: 10px;
     font-size: 20px;
     margin-right: 10px;
@@ -182,7 +189,7 @@ header {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
-    padding: 15px;
+    padding: 30px;
 }
 
 .newsHeader {
@@ -244,7 +251,7 @@ header {
 }
 
 /* Mobile screen <= 550px */
-@media screen and (max-width: 550px){
+@media screen and (max-width: 450px){
 
     header {
         width: 100%;
@@ -360,5 +367,55 @@ header {
     .email {
         width: 100%;
 
+    }
+}
+
+/* Tablet screen <= 800px */
+@media screen and (max-width: 850px) {
+    header h1 {
+        font-size: 50px;
+    }
+
+    .introduction {
+        font-size: 18px;
+        width: 80%;
+        overflow: hidden;
+    }
+
+    .questionHeader {
+        margin-right: 20px;
+        width: 30%;
+    }
+
+    .questionHeaderText {
+        font-size: 35px;
+    }
+
+    .questionTalkToUs {
+        font-size: 18px;
+    }
+
+    .questionList {
+        width: 100%;
+    }
+
+    .buildImg {
+        margin-bottom: 30px;
+    }
+
+    .buildHeader {
+        font-size: 60px;
+    }
+
+    .buildDescription {
+        font-size: 20px;
+        padding: 0 20px;
+        margin-bottom: 40px;
+    }
+
+    .contactUs, .services {
+        width: 20px;
+        padding: 10px 15px;
+        font-size: 17px;
     }
 }
