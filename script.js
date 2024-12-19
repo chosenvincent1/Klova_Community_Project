@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
         mobileMenu.classList.toggle('active');
     });
 });
-// Function for counting animation
+
 function countAnimation(target, start, end, duration, suffix = "") {
     let range = end - start;
     let stepTime = Math.abs(Math.floor(duration / range));
@@ -20,14 +20,13 @@ function countAnimation(target, start, end, duration, suffix = "") {
     }, stepTime);
 }
 
-// Wait until the DOM content loads
+
 document.addEventListener("DOMContentLoaded", () => {
     const subscribers = document.getElementById("subscribers");
     const active = document.getElementById("active");
     const service = document.getElementById("service");
 
-    // Call the counting function
-    countAnimation(subscribers, 0, 250, 2000, "k+"); // Count to 250k+
-    countAnimation(active, 0, 32, 2000, "k+");       // Count to 32k+
-    countAnimation(service, 0, 98, 2000, "%");       // Count to 98%
+    countAnimation(subscribers, 0, 250, 2000, "k+"); 
+    countAnimation(active, 0, 32, 2000, "k+");
+    countAnimation(service, 0, 98, 2000, "%");   
 });
