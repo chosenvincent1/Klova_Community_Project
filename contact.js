@@ -1,61 +1,57 @@
-// // the script side of this website
-// document.getElementById('validationForm').addEventListener('submit', function (e) {
-//     e.preventDefault(); // Prevent form submission
+document.getElementById("contactForm").addEventListener("submit", function (event) {
+    event.preventDefault();
 
-//     // Clear previous errors
-//     document.querySelectorAll('.error-message').forEach(el => el.textContent = '');
-//     document.querySelectorAll('input, textarea').forEach(el => el.classList.remove('error'));
+    // Get form values
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const phone = document.getElementById("phone").value.trim();
+    const message = document.getElementById("message").value.trim();
 
-//     let isValid = true;
-//     // Validate Name
-//     const name = document.getElementById('name');
-//     const nameError = document.getElementById('nameError');
-//     if (name.value.trim() === '') {
-//         nameError.textContent = 'Name is required.';
-//         name.classList.add('error');
-//         isValid = false;
-//     }
-//     // Validate Phone
-//     const phone = document.getElementById('phone');
-//     const phoneError = document.getElementById('phoneError');
-//     if (phone.value.trim() === "") {
-//         phoneError.textContent = 'Phone number is rquired.';
-//         phone.classList.add('error');
-//         isValid = false;
-//     }
+    // Checkboxes validation
+    const checkboxes = document.querySelectorAll("input[type='checkbox']");
+    const isAnyCheckboxChecked = Array.from(checkboxes).some(checkbox => checkbox.checked);
 
-//     // Validate Email
-//     const email = document.getElementById('email');
-//     const emailError = document.getElementById('emailError');
-//     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value)) {
-//         emailError.textContent = 'Please enter a valid email address.';
-//         email.classList.add('error');
-//         isValid = false;
-//     }
+    // Validation flags
+    let isValid = true;
+    let errorMessage = "";
 
-//     // Validate Checkbox
-//     const checkbox = document.getElementById('checkbox');
-//     const checkboxError = document.getElementById('checkboxError');
-//     if (!checkbox.checked) {
-//         checkboxError.textContent = 'You need to chose one.';
-//         isValid = false;
-//     }
+    // Validate name
+    if (name === "") {
+      isValid = false;
+      errorMessage += "Name is required.\n";
+    }
 
-//     // Validate Message
-//     const message = document.getElementById('message');
-//     const messageError = document.getElementById('messageError');
-//     if (message.value.trim() === '') {
-//         messageError.textContent = 'Message cannot be empty.';
-//         message.classList.add('error');
-//         isValid = false;
-//     }
+    // Validate email
+    const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+    if (!emailPattern.test(email)) {
+      isValid = false;
+      errorMessage += "Please enter a valid email address.\n";
+    }
 
-//     // If all inputs are valid, log success (or handle accordingly)
-//     if (isValid) {
-//         alert('Form submitted successfully!');
-//     }
-// });
+    // Validate phone
+    if (phone === "" || isNaN(phone) || phone.length < 10) {
+      isValid = false;
+      errorMessage += "Please enter a valid phone number.\n";
+    }
 
+    // Validate checkboxes
+    if (!isAnyCheckboxChecked) {
+      isValid = false;
+      errorMessage += "Please select at least one checkbox.\n";
+    }
 
+    // Validate message
+    if (message === "") {
+      isValid = false;
+      errorMessage += "Message is required.\n";
+    }
 
-
+    // Show errors or submit form
+    if (!isValid) {
+      alert(errorMessage);
+    } else {
+      alert("Form submitted successfully!");
+      // Optionally, you can handle the form data submission here
+      this.submit();
+    }
+  });
