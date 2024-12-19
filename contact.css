@@ -4,15 +4,14 @@
   padding: 0;
   box-sizing: border-box;
 }
-label{
-font-family: Switzer;
-font-size: 14px;
-font-weight: 500;
-line-height: 20px;
-text-align: left;
-text-underline-position: from-font;
-text-decoration-skip-ink: none;
-
+label {
+  font-family: Switzer;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
 }
 .navbar {
   display: flex;
@@ -112,7 +111,7 @@ text-decoration-skip-ink: none;
   font-size: 1em;
 }
 
-.flash{
+.flash {
   display: flex;
   align-items: center;
   background-color: #ff4d4f;
@@ -125,32 +124,30 @@ text-decoration-skip-ink: none;
   display: flex;
 }
 /* main stage of this website */
-main{
+main {
   background: #ffffff;
   padding: 40px 24px 17px 24px;
 }
-main .contact{
+main .contact {
   width: 100%;
 }
-main .contact .cont-first-word{
+main .contact .cont-first-word {
   width: 342px;
-height:140px;
-top: 40px;
-left: 24px;
-gap: 12px;
-
-
+  height: 140px;
+  top: 40px;
+  left: 24px;
+  gap: 12px;
 }
-main .contact .cont-first-word h1{
+main .contact .cont-first-word h1 {
   font-family: Switzer;
   font-size: 43px;
   font-weight: 600;
   line-height: 56px;
   letter-spacing: -0.03em;
   text-align: left;
-  color: #121212B2;
+  color: #121212b2;
 }
-main .contact .cont-first-word p{
+main .contact .cont-first-word p {
   font-family: Switzer;
   font-size: 16px;
   font-weight: 500;
@@ -158,23 +155,20 @@ main .contact .cont-first-word p{
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  color: #121212B2;
-  
+  color: #121212b2;
 }
 /* the img of this contact page */
 
-main .contact .contact-img img{
+main .contact .contact-img img {
   width: 100%;
-border-radius: 8px;
-
-
+  border-radius: 8px;
 }
 /* the form page of this website */
-main .contact .lets-talk .lets-word{
-  width:100%;
-margin-top: 30px;
+main .contact .lets-talk .lets-word {
+  width: 100%;
+  margin-top: 30px;
 }
-main .contact .lets-talk .lets-word h4{
+main .contact .lets-talk .lets-word h4 {
   font-family: Switzer;
   font-size: 24px;
   font-weight: 500;
@@ -182,111 +176,102 @@ main .contact .lets-talk .lets-word h4{
   letter-spacing: -0.03em;
   text-align: left;
   color: #060606;
-  
 }
-main .contact .lets-talk .lets-word p{
-font-family: Switzer;
-font-size: 16px;
-font-weight: 400;
-line-height: 24px;
-text-align: left;
-color: #060606;
-
-  
+main .contact .lets-talk .lets-word p {
+  font-family: Switzer;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #060606;
 }
 
-main form{
+main form {
   flex-direction: column;
 }
-main form label{
+main form label {
   display: block;
   margin-top: 15px;
 }
-main form input[type="text"]{
+main form input[type="text"] {
   width: 100%;
   height: 50px;
-  border-left:none ;
+  border-left: none;
   border-right: none;
   border-top: none;
   margin-top: 15px;
-
 }
-main form input[type="email"]{
+main form input[type="email"] {
   width: 100%;
   height: 50px;
-  border-left:none ;
+  border-left: none;
   border-right: none;
   border-top: none;
   margin-top: 15px;
-
 }
-main form input[type="number"]{
+main form input[type="number"] {
   width: 100%;
   height: 50px;
-  border-left:none ;
+  border-left: none;
   border-right: none;
   border-top: none;
   margin-top: 15px;
-
 }
-main form textarea{
+main form textarea {
   width: 100%;
   height: 100px;
-  border-left:none ;
+  border-left: none;
   border-right: none;
   border-top: none;
   margin-top: 15px;
-
 }
-main form .checking{
-  display:  grid;
+main form .checking {
+  display: grid;
   grid-template-columns: 2fr 1fr;
   margin-top: 15px;
 }
-main form .checking label{
+main form .checking label {
   margin-left: 10px;
   margin-bottom: 10px;
 }
-main form .checking .div-one, .div-two, .div-three, .div-four{
-  display:  flex;
-  
+main form .checking .div-one,
+.div-two,
+.div-three,
+.div-four {
+  display: flex;
 }
 /* main form .checking .div-one, .div-two, .div-three, .div-four label{
   
 } */
-main form .button-box{
+main form .button-box {
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: red;
 
-
-  width:100%;
-height: 60px;
-padding: 14px 24px 14px 24px;
-margin-top: 15px;
-margin-bottom: 15px;
-border-radius: 8px;
-
+  width: 100%;
+  height: 60px;
+  padding: 14px 24px 14px 24px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
 }
-main form .button-box button{
- background: transparent;
- outline: 0;
- border: 0;
- color: #ffffff;
- margin-right: 15px;
+main form .button-box button {
+  background: transparent;
+  outline: 0;
+  border: 0;
+  color: #ffffff;
+  margin-right: 15px;
 }
-main form .button-box button a{
+main form .button-box button a {
   font-family: Switzer;
-font-size: 16px;
-font-weight: 500;
-line-height: 32px;
-text-align: left;
-color: #ffffff;
-  
-  
- }
-main .contact .map img{
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 32px;
+  text-align: left;
+  color: #ffffff;
+}
+main .contact .map img {
   width: 100%;
 }
 
@@ -565,9 +550,6 @@ li {
   margin-top: 10px;
 }
 
-
-
-
 /* downward we have the responsiveness of each screen */
 @media (max-width: 768px) {
   .nav-links,
@@ -639,34 +621,34 @@ li {
     border-bottom: 1px solid #ccc;
     background-color: #fff;
   }
-  
+
   .logo {
     display: flex;
     align-items: center;
     padding-right: 20px;
     border-right: 1px solid #ccc;
   }
-  
+
   .logo svg {
     width: 40px;
     margin-right: 10px;
   }
-  
+
   .logo span {
     font-size: 1.2em;
     font-weight: bold;
   }
-  
+
   .nav-links {
     display: flex;
     align-items: center;
     list-style: none;
   }
-  
+
   .nav-links li {
     margin: 0 10px;
   }
-  
+
   .nav-links a {
     text-decoration: none;
     color: #333;
@@ -678,7 +660,7 @@ li {
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
   }
-  
+
   .contact-btn {
     padding: 8px 15px;
     color: #fff;
@@ -689,32 +671,30 @@ li {
     background: transparent;
     margin-left: 20px;
   }
-  main{
+  main {
     background: #ffffff;
     padding: 40px 24px 17px 24px;
   }
-  main .contact{
+  main .contact {
     width: 100%;
   }
-  main .contact .cont-first-word{
+  main .contact .cont-first-word {
     width: 342px;
-  height:140px;
-  top: 40px;
-  left: 24px;
-  gap: 12px;
-  
-  
+    height: 140px;
+    top: 40px;
+    left: 24px;
+    gap: 12px;
   }
-  main .contact .cont-first-word h1{
+  main .contact .cont-first-word h1 {
     font-family: Switzer;
     font-size: 43px;
     font-weight: 600;
     line-height: 56px;
     letter-spacing: -0.03em;
     text-align: left;
-    color: #121212B2;
+    color: #121212b2;
   }
-  main .contact .cont-first-word p{
+  main .contact .cont-first-word p {
     font-family: Switzer;
     font-size: 16px;
     font-weight: 500;
@@ -722,34 +702,31 @@ li {
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
-    color: #121212B2;
-    
+    color: #121212b2;
   }
   /* the img of this contact page */
-  
-  main .contact .contact-img img{
+
+  main .contact .contact-img img {
     width: 100%;
-  border-radius: 8px;
-  
-  
+    border-radius: 8px;
   }
   /* the form page of this website */
-  main .lets-talk{
+  main .lets-talk {
     width: 100%;
     background: #ffffff;
   }
-  main .contact .lets-talk .lets-word h4{
+  main .contact .lets-talk .lets-word h4 {
     font-family: Switzer;
-font-size: 32px;
-font-weight: 600;
-line-height: 42.24px;
-text-align: left;
-width: 301.44px;
-height: 42px;
-color: #000000;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 42.24px;
+    text-align: left;
+    width: 301.44px;
+    height: 42px;
+    color: #000000;
   }
 
-  main .contact .lets-talk .lets-word p{
+  main .contact .lets-talk .lets-word p {
     font-family: Switzer;
     font-size: 16px;
     font-weight: 400;
@@ -757,45 +734,44 @@ color: #000000;
     text-align: left;
     width: 579.61px;
     height: 51px;
-      
-color: #000000;
+
+    color: #000000;
   }
-  main .contact .hold-form{
+  main .contact .hold-form {
     display: flex;
     align-items: center;
     gap: 50px;
   }
-  main .contact .hold-form form{
+  main .contact .hold-form form {
     width: 50%;
   }
-  main .contact .hold-form form .two-input{
+  main .contact .hold-form form .two-input {
     display: flex;
     align-items: center;
     gap: 10px;
   }
-  main .contact .hold-form form .two-input .box-input{
+  main .contact .hold-form form .two-input .box-input {
     width: 100%;
   }
-  main .contact .hold-form form .two-input .inputt{
+  main .contact .hold-form form .two-input .inputt {
     width: 100%;
   }
-  main .contact .hold-form form .checking{
+  main .contact .hold-form form .checking {
     display: flex;
     align-items: center;
     gap: 60px;
   }
-  main .contact .hold-form form .checking label{
+  main .contact .hold-form form .checking label {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
     margin-left: 10px;
-    
   }
-  main .contact .hold-form form .button-box{
+  main .contact .hold-form form .button-box {
     margin-top: 100px;
     background: red;
   }
-  main .contact .hold-form form .button-box a{
+  main .contact .hold-form form .button-box a {
     font-family: Archivo;
     font-size: 18px;
     font-weight: 600;
@@ -803,17 +779,13 @@ color: #000000;
     letter-spacing: -0.25px;
     text-align: center;
     color: #ffffff;
-    
   }
- 
-  main .contact .hold-form .map{
+
+  main .contact .hold-form .map {
     width: 50%;
   }
 
-
-
-
- /* and this is where it ends */
+  /* and this is where it ends */
 
   main .build {
     text-align: center;

@@ -1,4 +1,6 @@
-document.getElementById("contactForm").addEventListener("submit", function (event) {
+document
+  .getElementById("contactForm")
+  .addEventListener("submit", function (event) {
     event.preventDefault();
 
     // Get form values
@@ -9,7 +11,9 @@ document.getElementById("contactForm").addEventListener("submit", function (even
 
     // Checkboxes validation
     const checkboxes = document.querySelectorAll("input[type='checkbox']");
-    const isAnyCheckboxChecked = Array.from(checkboxes).some(checkbox => checkbox.checked);
+    const isAnyCheckboxChecked = Array.from(checkboxes).some(
+      (checkbox) => checkbox.checked
+    );
 
     // Validation flags
     let isValid = true;
