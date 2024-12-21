@@ -21,24 +21,29 @@ h1 {
 }
 
 p {
-    margin-top: 10px;
+    margin-top: 20px;
     padding-left: 30px;
 }
 
 .positions {
     margin: 25px;
-    width: 10vw;
-    height: 8vh;
+    width: 27%;
+    padding: 0.75rem 1.5rem;
     text-align: center;
     border-radius: 10px;
     background-color: orangered;
-    color: antiquewhite;
+    color: white;
     border: orangered;
+    font-size: 1rem;
+    overflow: hidden;
+    white-space: nowrap;
 }
+
 img {
-    width: 1300px;
-    border-radius: 20px;
-    margin-left: 25px;
+    width: 100%;
+    border-radius: 35px;
+    padding: 15px;
+    object-fit: cover;
 }
 
 .work {
@@ -60,16 +65,20 @@ img {
 .p3 {
     font-size: 25px;
 }
-input {
-    height: 8.5px;
-    background-color: orangered;
+.input1 {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #ff5733;
 }
 
 .div1 {
     margin: 20px;
     background-color: #eff1f7;
     height: 30vh;
+   max-width: 100%; 
 }
+
 
 h2 {
     padding-left: 30px;
@@ -79,7 +88,9 @@ h3 {
     padding-top: 20px;
     padding-left: 30px;
     font-weight: bold;
-    font-size: 23px;
+    size: 48px;
+    
+     
 }
 
 .img2 {
@@ -101,11 +112,10 @@ h3 {
     display: flex;
     margin-top: 30px;
 }
-.icon {
-    position: absolute;
-    right: 70px;
-    margin-top: 5px;
-}
+/*.icon {
+   position: absolute;
+   left: 150px; 
+}*/
 
 .div4 {
     width: 1300px;
@@ -173,4 +183,91 @@ h3 {
 .img7 {
     height: 24px;
     width: 24px;
+}
+.img4 {
+    height: 24px;
+    width: 24px;
+}
+/* on small screen*/
+@media screen and (max-width: 480px) {
+    
+
+    .positions {
+        margin: 25px;
+        width: 200px;
+        padding: 0.75rem 1.5rem;
+        text-align: center;
+        border-radius: 10px;
+        background-color: orangered;
+        color: white;
+        border: orangered;
+        font-size: 1rem;
+        overflow: hidden;
+     }
+     .work{
+        display: flex;
+        flex-direction: column;
+     }
+
+     img {
+        width: 100%;
+        padding-left: 25px;
+        padding-right: 25px;
+     }
+
+     .p1 {
+        font-size: 25px;
+    position: absolute;
+    left: 100px;
+    top: 578px; 
+     }
+     .p2 {
+        font-size: 25px;
+        position: absolute;
+        left: 5px;
+        top: 578px;  
+     }
+     .p3 {
+        font-size: 25px;
+     }
+
+     .div1 {
+        height: 20vh;
+        margin: 30px;
+     }
+
+     .div3 {
+        margin-top: 20px;
+        
+     }
+      
+     p {
+        padding-left: 30px;
+        padding-right: 30px;
+    
+     }
+     h2 {
+        padding-left: 30px;
+        margin-top: 80px;
+        margin-bottom: 20px; 
+     }
+    h3 {
+        padding-top: 20px;
+        font-weight: bold;
+        size: 48px;   
+    }
+    
+    .p4 {
+        margin-right: 50px;
+    }
+    .p5 {
+      margin-right: 50px;
+    }
+    .icon {
+        position: absolute;
+        right: 37px;
+        margin-top: 20px;
+    }
+    
+     
 }
