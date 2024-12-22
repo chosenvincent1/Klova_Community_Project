@@ -263,11 +263,68 @@ h3 {
     .p5 {
       margin-right: 50px;
     }
-    .icon {
-        position: absolute;
-        right: 37px;
+    .div3 {
         margin-top: 20px;
+        
+     }
     }
-    
-     
+    /*style for Tablets*/
+    @media screen and (max-width: 768px) {
+        .positions {
+            margin: 25px;
+            width: 350px;
+            padding: 0.75rem 1.5rem;
+            text-align: center;
+            border-radius: 10px;
+            background-color: orangered;
+            color: white;
+            border: orangered;
+            font-size: 1rem;
+            overflow: hidden;
+         }  
+         .p1 {
+            margin-top: 5px;
+            font-size: 25px;
+        position: absolute;
+        left: 500px;
+        
+         }
+         .p2 {
+            margin-top: 5px;
+            font-size: 25px;
+            position: absolute;
+            left: 590px;
+              
+         }
+
+         .p3 {
+            margin-top: 5px;
+         }
+         img {
+            width: 100%;
+            padding-left: 25px;
+            padding-right: 25px;
+         }
+
+         h2 {
+            padding-left: 30px;
+            margin-top: 80px;
+            margin-bottom: 20px; 
+         }
+        h3 {
+            padding-top: 20px;
+            font-weight: bold;
+            size: 48px;   
+        }
+        .div3 {
+        margin-top: 2px;
+         }
+
+         .icon {
+            margin-top: 15px;
+            position: absolute;
+            right: 70px;
+         }
+
+         
 }
