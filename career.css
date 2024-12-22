@@ -328,3 +328,58 @@ h3 {
 
          
 }
+/* for desktop*/
+@media screen and (max-width: 1200px) {
+    .p1 {
+        margin-top: 20px;
+        font-size: 25px;
+    position: absolute;
+    left: 900px;
+    font-size: 30px;
+    font-weight: 100;
+    
+     }
+     .p2 {
+        margin-top: 20px;
+        font-size: 25px;
+        position: absolute;
+        left: 1000px;
+        font-size: 30px;
+        font-weight: 100;
+          
+     }
+     .icon {
+        margin-top: 15px;
+        position: absolute;
+        right: 70px;
+        font-size: 30px;
+        font-weight: 100;
+     }
+     .p3 {
+        font-size: 30px;
+        
+     }
+     .p4 {
+        font-size: 30px;
+        font-weight: 100;
+     }
+     .p5 {
+        font-size: 30px;
+        font-weight: 100;
+     }
+     h2 {
+        font-size: 35px;
+        font-weight: bold;
+     }
+     h3 {
+        font-size: 35px;
+        font-weight: bold;
+     }
+     p {
+        font-size: 30px;
+     }
+     h1 {
+        font-size: 40px;
+        font-weight: bold;
+     }
+}
