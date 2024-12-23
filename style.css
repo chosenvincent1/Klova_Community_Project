@@ -289,10 +289,9 @@ main .black-div .we-are-proud h2 {
 main .lets-dispaly {
   width: 100%;
   height: 228px;
-  gap: 30px;
-  opacity: 0px;
+ margin-top: 15px;
 
-  background: red;
+  /* background: red; */
 }
 main .lets-dispaly .ok {
   flex-wrap: wrap;
