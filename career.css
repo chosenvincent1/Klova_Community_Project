@@ -9,11 +9,14 @@ nav {
     height: 20px;
 }
 
+
 .career {
+    font-family: 'Switzer', Arial, Helvetica, sans-serif;
     margin-top: 20px;
     margin-bottom: 50px;
 }
 h1 {
+    font-family: 'Switzer', Arial, Helvetica, sans-serif;
     font-size: bold;
     margin-top: 30px;
     margin-bottom: 20px;
@@ -21,8 +24,13 @@ h1 {
 }
 
 p {
+    font-family: 'Switzer', Arial, Helvetica, sans-serif;
     margin-top: 20px;
     padding-left: 30px;
+    @media screen and (max-width: 480px) {
+        padding-left: 20px;
+        font-size: 15px;
+    }
 }
 
 .positions {
@@ -37,6 +45,12 @@ p {
     font-size: 1rem;
     overflow: hidden;
     white-space: nowrap;
+    font-family: 'Switzer', Arial, Helvetica, sans-serif;
+    @media screen and (max-width: 480px) {
+        width: 50%;
+        font-size: 15px;
+        overflow: hidden;
+    }
 }
 
 img {
@@ -49,27 +63,54 @@ img {
 .work {
     display: flex;
     margin-bottom: 30px;
+    @media screen and (max-width:480px) {
+        display: block;
+        margin-bottom: 50px;
+    }
 }
 .p1 {
+    font-family: 'Switzer', Arial, Helvetica, sans-serif;
     font-size: 25px;
     position: absolute;
     left: 1050px;
+    @media screen and (max-width: 480px) {
+        font-size: 20px;
+        position: absolute;
+        left: 5px;
+        
+    }
+    
 
 }
 .p2 {
+    font-family: 'Switzer', Arial, Helvetica, sans-serif;
     font-size: 25px;
     position: absolute;
     left: 1130px;
-    
+    @media screen and (max-width: 480px) {
+        font-size: 20px;
+        position: absolute;
+        left: 90px;
+    }
 }
 .p3 {
     font-size: 25px;
+    font-family: 'Switzer', Arial, Helvetica, sans-serif;
 }
+.p4 {
+    font-size: 25px;
+    font-family: 'Switzer', Arial, Helvetica, sans-serif;
+    @media screen and (max-width: 480px) {
+        font-size: 10.5px;
+    }
+}
+
+
 .input1 {
     height: 10px;
     width: 10px;
     border-radius: 50%;
-    background-color: #ff5733;
+    color: #ff5733;
 }
 
 .div1 {
@@ -81,20 +122,33 @@ img {
 
 
 h2 {
+    font-family: 'Switzer', Arial, Helvetica, sans-serif;
     padding-left: 30px;
     margin-bottom: 20px;
+    @media screen and (max-width:480px) {
+        padding-top: 20px;
+        padding-left: 20px;
+        font-size: 20px;
+        
+    }
 }
 h3 {
+    font-family: 'Switzer', Arial, Helvetica, sans-serif;
     padding-top: 20px;
     padding-left: 30px;
     font-weight: bold;
     size: 48px;
+    @media screen and (max-width: 480px) {
+        padding-top: 15px;
+        padding-left: 20px;
+        font-size: 17px;
+    }
     
      
 }
 
 .img2 {
-    height: 17px;
+    height: 20px;
     width: 20px;
     
 }
@@ -103,19 +157,25 @@ h3 {
     right: 70px;
     margin-top: 50px;
     cursor: pointer;
-    color: #007bff;
+    color: black;
 }
 .div2 {
     display: flex;
 }
 .div3 {
     display: flex;
-    margin-top: 30px;
+    margin-top: 15px;
 }
-/*.icon {
-   position: absolute;
-   left: 150px; 
-}*/
+.icon {
+    font-family: 'Switzer', Arial, Helvetica, sans-serif;
+    margin-top: 15px;
+        position: absolute;
+        right: 70px;
+        @media screen and (max-width: 480px) {
+            margin-top: 5px;
+            font-size: 15px;
+        }
+}
 
 .div4 {
     width: 1300px;
@@ -164,8 +224,12 @@ h3 {
 .news {
     margin-top: 30px;
 }
-.p6 {
+.p5 {
     margin-top: 10px;
+    @media screen and (max-width: 480px) {
+        font-size: 15px;
+        padding-top: 5px;
+    }
 }
 .div8 {
     position: absolute;
@@ -187,199 +251,4 @@ h3 {
 .img4 {
     height: 24px;
     width: 24px;
-}
-/* on small screen*/
-@media screen and (max-width: 480px) {
-    
-
-    .positions {
-        margin: 25px;
-        width: 200px;
-        padding: 0.75rem 1.5rem;
-        text-align: center;
-        border-radius: 10px;
-        background-color: orangered;
-        color: white;
-        border: orangered;
-        font-size: 1rem;
-        overflow: hidden;
-     }
-     .work{
-        display: flex;
-        flex-direction: column;
-     }
-
-     img {
-        width: 100%;
-        padding-left: 25px;
-        padding-right: 25px;
-     }
-
-     .p1 {
-        font-size: 25px;
-    position: absolute;
-    left: 100px;
-    top: 578px; 
-     }
-     .p2 {
-        font-size: 25px;
-        position: absolute;
-        left: 5px;
-        top: 578px;  
-     }
-     .p3 {
-        font-size: 25px;
-     }
-
-     .div1 {
-        height: 20vh;
-        margin: 30px;
-     }
-
-     .div3 {
-        margin-top: 20px;
-        
-     }
-      
-     p {
-        padding-left: 30px;
-        padding-right: 30px;
-    
-     }
-     h2 {
-        padding-left: 30px;
-        margin-top: 80px;
-        margin-bottom: 20px; 
-     }
-    h3 {
-        padding-top: 20px;
-        font-weight: bold;
-        size: 48px;   
-    }
-    
-    .p4 {
-        margin-right: 50px;
-    }
-    .p5 {
-      margin-right: 50px;
-    }
-    .div3 {
-        margin-top: 20px;
-        
-     }
-    }
-    /*style for Tablets*/
-    @media screen and (max-width: 768px) {
-        .positions {
-            margin: 25px;
-            width: 350px;
-            padding: 0.75rem 1.5rem;
-            text-align: center;
-            border-radius: 10px;
-            background-color: orangered;
-            color: white;
-            border: orangered;
-            font-size: 1rem;
-            overflow: hidden;
-         }  
-         .p1 {
-            margin-top: 5px;
-            font-size: 25px;
-        position: absolute;
-        left: 500px;
-        
-         }
-         .p2 {
-            margin-top: 5px;
-            font-size: 25px;
-            position: absolute;
-            left: 590px;
-              
-         }
-
-         .p3 {
-            margin-top: 5px;
-         }
-         img {
-            width: 100%;
-            padding-left: 25px;
-            padding-right: 25px;
-         }
-
-         h2 {
-            padding-left: 30px;
-            margin-top: 80px;
-            margin-bottom: 20px; 
-         }
-        h3 {
-            padding-top: 20px;
-            font-weight: bold;
-            size: 48px;   
-        }
-        .div3 {
-        margin-top: 2px;
-         }
-
-         .icon {
-            margin-top: 15px;
-            position: absolute;
-            right: 70px;
-         }
-
-         
-}
-/* for desktop*/
-@media screen and (max-width: 1200px) {
-    .p1 {
-        margin-top: 20px;
-        font-size: 25px;
-    position: absolute;
-    left: 900px;
-    font-size: 30px;
-    font-weight: 100;
-    
-     }
-     .p2 {
-        margin-top: 20px;
-        font-size: 25px;
-        position: absolute;
-        left: 1000px;
-        font-size: 30px;
-        font-weight: 100;
-          
-     }
-     .icon {
-        margin-top: 15px;
-        position: absolute;
-        right: 70px;
-        font-size: 30px;
-        font-weight: 100;
-     }
-     .p3 {
-        font-size: 30px;
-        
-     }
-     .p4 {
-        font-size: 30px;
-        font-weight: 100;
-     }
-     .p5 {
-        font-size: 30px;
-        font-weight: 100;
-     }
-     h2 {
-        font-size: 35px;
-        font-weight: bold;
-     }
-     h3 {
-        font-size: 35px;
-        font-weight: bold;
-     }
-     p {
-        font-size: 30px;
-     }
-     h1 {
-        font-size: 40px;
-        font-weight: bold;
-     }
 }
