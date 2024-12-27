@@ -10,8 +10,6 @@ label {
   font-weight: 500;
   line-height: 20px;
   text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
 }
 .navbar {
   display: flex;
@@ -56,8 +54,6 @@ label {
   font-weight: 400;
   line-height: 14px;
   text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
 }
 
 .contact-btn {
@@ -451,6 +447,7 @@ footer .news .input-container input {
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
+  flex: 1;
   padding: 0px;
   gap: 10px;
   width: 307px;
@@ -465,6 +462,12 @@ footer .news .input-container button {
   border-radius: 4px;
   outline: 0;
   border: 0;
+  color: #ffffff;
+  font-family: Switzer;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 13.2px;
+  text-align: center;
 }
 
 /* the main footer section of this website */
@@ -527,8 +530,8 @@ li {
   font-size: 18px;
   font-weight: 700;
   text-transform: capitalize;
-  margin-bottom: 20px;
-  margin-top: 20px;
+  font-family: Switzer;
+  line-height: 23.76px;
 }
 /* the last section of this website */
 .last-footer {
@@ -548,6 +551,9 @@ li {
   text-decoration-skip-ink: none;
   color: #7e838f;
   margin-top: 10px;
+}
+.last-footer svg {
+  cursor: pointer;
 }
 
 /* downward we have the responsiveness of each screen */
@@ -570,7 +576,7 @@ li {
 }
 @media (min-width: 769px) {
   .mobile-menu {
-    display: none !important;
+    display: none;
   }
   .logo svg {
     width: 22.5px;
@@ -583,7 +589,7 @@ li {
 /*tablet */
 @media (min-width: 769px) {
   .mobile-menu {
-    display: none !important;
+    display: none;
   }
   .logo svg {
     width: 22.5px;
@@ -591,6 +597,10 @@ li {
     top: 0.75px;
     gap: 0px;
     opacity: 0px;
+  }
+  .navbar ul {
+    display: flex;
+    align-items: center;
   }
 }
 /* mobile */
@@ -611,6 +621,15 @@ li {
     opacity: 0px;
   }
 }
+/* @media (min-width: 700px) {
+  .navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+
+  }
+} */
 /* decktop section of media query */
 @media (min-width: 1024px) {
   .navbar {
@@ -621,6 +640,11 @@ li {
     border-bottom: 1px solid #ccc;
     background-color: #fff;
   }
+  /* .navbar ul{
+  display: flex;
+  align-items: center;
+   justify-content: space-between; 
+ } */
 
   .logo {
     display: flex;
@@ -700,9 +724,9 @@ li {
     font-weight: 500;
     line-height: 24px;
     text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
     color: #121212b2;
+    width: 633px;
+    height: 64px;
   }
   /* the img of this contact page */
 
@@ -745,6 +769,14 @@ li {
   main .contact .hold-form form {
     width: 50%;
   }
+  main form textarea {
+    width: 100%;
+    height: 200px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    margin-top: 15px;
+  }
   main .contact .hold-form form .two-input {
     display: flex;
     align-items: center;
@@ -768,11 +800,12 @@ li {
     margin-left: 10px;
   }
   main .contact .hold-form form .button-box {
-    margin-top: 100px;
+    margin-top: 40px;
     background: red;
+    cursor: pointer;
   }
   main .contact .hold-form form .button-box a {
-    font-family: Archivo;
+    font-family: swizter;
     font-size: 18px;
     font-weight: 600;
     line-height: 28px;
@@ -936,8 +969,9 @@ li {
     border: 0;
   }
   footer .news .input-container button {
-    width: 100%;
-    height: 36px;
+    width: Fixed (94px) px;
+    height: Fixed (36px) px;
+    cursor: pointer;
     background: #ff4337;
     border-radius: 4px;
     outline: 0;
@@ -954,7 +988,9 @@ li {
     padding-top: 40px;
   }
   .cover .first-content-1 {
-    line-height: 24px;
+    width: 630px;
+    height: 116px;
+    padding: 0px 66px 0px 0px;
   }
   .cover .first-content-1 p {
     color: #7e838f;
@@ -988,6 +1024,7 @@ li {
     text-transform: capitalize;
   }
   .main-side header {
+    font-family: Switzer;
     font-size: 18px;
     font-weight: 700;
     text-transform: capitalize;
@@ -1013,3 +1050,4 @@ li {
     color: #7e838f;
   }
 }
+
