@@ -4,9 +4,9 @@
     box-sizing: border-box;
 }
 
-nav {
-    display: flex;
-    height: 20px;
+.career_size{
+    /* width: 100%; */
+    max-width: 1440px;
 }
 
 
@@ -17,76 +17,113 @@ nav {
 }
 h1 {
     font-family: 'Switzer', Arial, Helvetica, sans-serif;
-    font-size: bold;
+    font-weight: bold;
+    font-size: 50px;
     margin-top: 30px;
     margin-bottom: 20px;
-    padding-left: 30px;
+    /* padding-left: 30px; */
 }
-
 p {
     font-family: 'Switzer', Arial, Helvetica, sans-serif;
-    margin-top: 20px;
-    padding-left: 30px;
-    @media screen and (max-width: 480px) {
+    margin-top: 10px;
+    /* @media only screen and (max-width: 392px){
+        margin-top: 30px;
+    } */
+}
+.p6 {
+    width: 62%;
+    font-size: 18px;
+    /* padding-left: 30px; */
+    /* @media screen and (max-width: 480px) {
         padding-left: 20px;
         font-size: 15px;
+    }*/
+    @media only screen and (max-width: 900px){
+        width: 90%;
+        font-size: 21px;
     }
+    @media only screen and (max-width: 735px){
+        font-size: 18px;
+    }
+    @media only screen and (max-width: 498px){
+        width: 100%;
+        font-size: 15px;
+    }
+
 }
 
+
 .positions {
-    margin: 25px;
-    width: 27%;
-    padding: 0.75rem 1.5rem;
+    /* margin: 25px; */
+    /* width: 27%; */
+    margin-top: 40px;
+    padding: 20px 30px;
     text-align: center;
     border-radius: 10px;
+    border: none;
     background-color: orangered;
     color: white;
-    border: orangered;
+    /* border: orangered; */
     font-size: 1rem;
     overflow: hidden;
     white-space: nowrap;
     font-family: 'Switzer', Arial, Helvetica, sans-serif;
-    @media screen and (max-width: 480px) {
+    /* @media screen and (max-width: 480px) {
         width: 50%;
         font-size: 15px;
         overflow: hidden;
-    }
-    @media screen and (max-width: 768px) {
+    } */
+    /* @media screen and (max-width: 768px) {
         width: 70%;
         font-size: 20px;
+    } */
+    @media only screen and (max-width: 498px){
+        width: 100%;
     }
 }
 
-img {
+ .career_img {
     width: 100%;
     border-radius: 35px;
-    padding: 15px;
+    /* padding: 15px; */
     object-fit: cover;
+    @media only screen and (max-width: 498px){
+        border-radius: 20px;
+    }
+    @media only screen and (max-width: 392px){
+        border-radius: 10px;
+    }
 }
+.career_head {
+    padding: 30px;
+}
+
 
 .work {
     display: flex;
+    margin-top: 30px;
     margin-bottom: 30px;
-    @media screen and (max-width:480px) {
+    justify-content: space-between;
+    /* @media screen and (max-width:480px) {
         display: block;
         margin-bottom: 50px;
-    }
-    @media screen and (max-width: 768px) {
+    } */
+    /* @media screen and (max-width: 768px) {
     display: block;
     margin-bottom: 70px;
-    }
-    @media screen and (max-width: 1200px) {
+    } */
+    /* @media screen and (max-width: 1200px) {
         display: block;
         margin-bottom: 90px;
-    }
+    } */
 
     
 }
-.p1 {
+/* .p1 { 
     font-family: 'Switzer', Arial, Helvetica, sans-serif;
     font-size: 25px;
-    position: absolute;
-    left: 1050px;
+     position: absolute;
+     left: 1050px; 
     @media screen and (max-width: 480px) {
         font-size: 20px;
         position: absolute;
@@ -102,8 +139,8 @@ img {
     }
     
 
-}
-.p2 {
+}*/
+/*.p2 {
     font-family: 'Switzer', Arial, Helvetica, sans-serif;
     font-size: 25px;
     position: absolute;
@@ -122,37 +159,77 @@ img {
         left: 100px;
     }
     
-}
+}*/
 .p3 {
     font-size: 25px;
     font-family: 'Switzer', Arial, Helvetica, sans-serif;
 }
 .p4 {
-    font-size: 25px;
+    font-size: 20px;
     font-family: 'Sw itzer', Arial, Helvetica, sans-serif;
-    @media screen and (max-width: 420px) {
-        font-size: 9px;
+    margin-top: 10px;
+    width: 70%;
+    @media only screen and (max-width: 1100px){
+        font-size: 30px;
     }
-    @media screen and (max-width: 480px) {
-        font-size: 10.5px;
+    @media only screen and (max-width: 860px){
+        font-size: 20px;
     }
-    @media screen and (max-width: 768px) {}
-    font-size: 13px;
+    @media only screen and (max-width: 567px){
+        font-size: 15px;
+    }
+    @media only screen and (max-width: 480px){
+        font-size: 15px;
+    }
+    @media only screen and (max-width: 442px){
+        font-size: 14px;
+    }
+    @media only screen and (max-width: 392px){
+        width: 100%; 
+        font-size: 15px;
+    }
 }
 
 
 .input1 {
-    height: 10px;
-    width: 10px;
     border-radius: 50%;
-    color: #ff5733;
+    font-size: 45px;
+    @media only screen and (max-width: 1100px){
+        font-size: 30px;
+    }
+    @media only screen and (max-width: 707px){
+        font-size: 23px;
+    }
+    @media only screen and (max-width: 567px){
+        font-size: 18px;
+    }
+    @media only screen and (max-width: 480px){ 
+        font-size: 25px;
+        font-size: bold;
+    }  
+    @media only screen and (max-width: 442px){
+        font-size: 20px;
+    }
+    @media only screen and (max-width: 404px){
+        font-size: 19px;
+        font-weight: bold;
+    }
+    @media only screen and (max-width: 392px){
+        font-size: 18px;
+        font-weight: bold;
+    }
 }
 
 .div1 {
     margin: 20px;
+    padding: 40px; 
+    position: relative;
     background-color: #eff1f7;
-    height: 30vh;
-   max-width: 100%; 
+   max-width: 100%;
+   border-radius: 20px;
+   @media only screen and (max-width: 860px){
+    padding: 25px;
+}
 }
 
 
@@ -160,55 +237,106 @@ h2 {
     font-family: 'Switzer', Arial, Helvetica, sans-serif;
     padding-left: 30px;
     margin-bottom: 20px;
-    @media screen and (max-width:480px) {
-        padding-top: 20px;
-        padding-left: 20px;
-        font-size: 20px;
-}
+    font-size: 45px;
+    @media only screen and (max-width: 392px){
+        font-size: 30px;
+    }
+   
 }
 h3 {
     font-family: 'Switzer', Arial, Helvetica, sans-serif;
-    padding-top: 20px;
-    padding-left: 30px;
-    font-weight: bold;
-    size: 48px;
-    @media screen and (max-width: 480px) {
-        padding-top: 15px;
-        padding-left: 20px;
-        font-size: 17px;
+    font-size: 30px;
+    @media only screen and (max-width: 860px){
+        font-size: 25px;
+    }
+    @media only screen and (max-width: 567px){
+        font-size: 20px;
     }
     
-     
+    font-weight: bold;
 }
 
 .img2 {
     height: 20px;
     width: 20px;
+    margin-right: 10px;
+    @media only screen and (max-width: 442px){
+        height: 15px;
+        width: 15px;
+    }
+    @media only screen and (max-width: 392px){
+        display: none;
+    }
     
 }
 .arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
     position: absolute;
     right: 70px;
-    margin-top: 50px;
+    top: 50px;
+    /* margin-top: 10px; */
     cursor: pointer;
     color: black;
+    background-color: white;
+    width: 40px;
+    border-radius: 100%;
+    height: 40px;
+    font-size: 25px;
+    @media only screen and (max-width: 860px) {
+        width: 30px;
+        height: 30px;
+        font-size: 15px;
+    }
+    @media only screen and (max-width: 700px){
+        position: absolute;
+        right: 35px;
+    }
+    @media only screen and (max-width: 498px){
+        right: 30px;
+    }
+    @media only screen and (max-width: 430px) {
+        right: 35px;
+    }
+    @media only screen and (max-width: 392px){
+        display: none;
+    }
 }
-.div2 {
-    display: flex;
-}
+/* .div2 { 
+    display: flex; 
+}  */
 .div3 {
     display: flex;
-    margin-top: 15px;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 35px;  
 }
 .icon {
     font-family: 'Switzer', Arial, Helvetica, sans-serif;
-    margin-bottom: 15px;
-        position: absolute;
-        right: 70px;
-        @media screen and (max-width: 480px) {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    @media only screen and (max-width: 860px){
+        font-size: 16px;
+    }
+    @media only screen and (max-width: 567px){
+        font-size: 14px;
+    }
+    @media only screen and (max-width: 442px){
+        font-size: 12px;
+    }
+    @media only screen and (max-width: 392px){
+        font-size: 17px;
+        font-weight: 100;
+    }
+    /* margin-bottom: 15px; */
+        /* position: absolute; */
+        /* right: 70px; */
+        /* @media screen and (max-width: 480px) {
             margin-top: 5px;
             font-size: 15px;
-        }
+        } */
 }
 
 .div4 {
@@ -260,10 +388,26 @@ h3 {
 }
 .p5 {
     margin-top: 10px;
-    @media screen and (max-width: 480px) {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    @media only screen and (max-width: 860px){
+        font-size: 16px;
+    }
+    @media only screen and (max-width: 567px){
+        font-size: 14px;
+    }
+    @media only screen and (max-width: 442px){
+        font-size: 12px;
+    }
+    @media only screen and (max-width: 392px){ 
+        font-size: 17px;
+        font-weight: 100;
+     }
+    /* @media screen and (max-width: 480px) {
         font-size: 15px;
         padding-top: 5px;
-    }
+    } */
 }
 .div8 {
     position: absolute;
@@ -285,4 +429,62 @@ h3 {
 .img4 {
     height: 24px;
     width: 24px;
+    margin-right: 10px;
+    @media only screen and (max-width: 442px){
+        height: 20px;
+        width: 20px;
+    }
+    @media only screen and (max-width: 392px){
+      height: 23px;
+      width: 23px;
+    }
+}
+.div9 {
+    display: flex;
+    gap: 25px;
+    @media only screen and (max-width: 392px){
+        display: none;
+    }
+}
+.div10 {
+    display: flex;
+    gap: 20px;
+    @media only screen and (max-width: 480px){
+        display: none;
+    }
+}
+.div11 {
+    display: none;
+    @media only screen and (max-width: 392px){
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+    
+    }
+}
+.p7 {
+    @media only screen and (max-width: 1326px) {
+        display: none;
+    }
+    @media only screen and (max-width: 392px){
+        display: flex;
+        padding-left: 30px;
+        font-size: 17px;
+    }
+}
+.img8 {
+    @media only screen and (max-width: 1326px){
+        display: none;
+    }
+    @media only screen and (max-width: 392px){
+        display: flex;
+        width: 20px;
+        height: 20px;
+        margin-bottom: 2px;
+        position: absolute; 
+        right: 20px;
+    }
+}
+.radio {
+    accent-color: orangered;
 }
