@@ -6,6 +6,12 @@
   box-sizing: border-box;
   font-family: switzer;
 }
+button{
+  background: transparent;
+  border: 0;
+  outline: 0;
+  color: #ffffff;
+}
 label {
   font-family: Switzer;
   font-size: 14px;
@@ -30,13 +36,28 @@ label {
 }
 
 .logo svg {
-  width: 40px;
-  margin-right: 10px;
+  width: 22.5px;
+height: 22.5px;
+
 }
 
 .logo span {
-  font-size: 1.2em;
-  font-weight: bold;
+  font-family: Switzer;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 23.76px;
+  text-align: left;
+  color: #000000;
+  
+}
+.logo span a{
+  font-family: Switzer;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 23.76px;
+  text-align: left;
+  color: #000000;
+  
 }
 
 .nav-links {
@@ -45,7 +66,7 @@ label {
 }
 
 .nav-links li {
-  margin: 0 10px;
+  margin: 0 20px;
 }
 
 .nav-links a {
@@ -68,6 +89,12 @@ label {
   background: transparent;
   margin-left: 20px;
 }
+.flash a{
+  color: #fff;
+  cursor: pointer;
+  font-size: 1em;
+}
+
 .hamburger {
   display: none;
   flex-direction: column;
@@ -189,10 +216,10 @@ main .black-div .our-btn-button .first-btn-box {
   align-items: center;
   text-align: center;
   justify-content: center;
+  cursor: pointer;
   margin-top: 20px;
 }
 main .black-div .our-btn-button .first-btn-boxx {
-  padding: 10px 15px 10px 15px;
   border-radius: 12px;
   border: 1px solid #efefef;
   text-align: center;
@@ -201,14 +228,29 @@ main .black-div .our-btn-button .first-btn-boxx {
   align-items: center;
   justify-content: center;
   margin-top: 20px;
-  padding-bottom: 20px;
-
   width: Fill (310px) px;
   height: Hug (60px) px;
   padding: 14px 24px 14px 24px;
   gap: 16px;
-  border-radius: 12px;
-  opacity: 0px;
+  cursor: pointer;
+}
+main .black-div .our-btn-button .first-btn-boxx button{
+  font-family: Switzer;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 32px;
+  background: transparent;
+  border: 0;
+  outline: 0;
+}
+main .black-div .our-btn-button .first-btn-boxx button a{
+  font-family: Switzer;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 32px;
+  text-align: left;
+  color: #ffffff;
+  text-decoration: none;
 }
 main .black-div .our-btn-button .first-btn-box button {
   font-family: Switzer;
@@ -218,6 +260,7 @@ main .black-div .our-btn-button .first-btn-box button {
   background: transparent;
   border: 0;
   outline: 0;
+  
 }
 main .black-div .our-btn-button .first-btn-box button a {
   font-family: Switzer;
@@ -356,6 +399,7 @@ main .cards .first-card {
   height: 100%;
   padding: 20px;
   margin-top: 20px;
+  border-radius: 8px;
 }
 main .cards .frist-card h2 {
   width: 302px;
@@ -388,9 +432,7 @@ main .cards .third-card {
   width: 100%;
   height: 100%;
   padding: 20px 34px 20px 20px;
-  gap: 0px;
   border-radius: 8px;
-  opacity: 0px;
   background: #eff1f7;
   margin-top: 20px;
 }
@@ -1045,23 +1087,47 @@ li {
   }
 
   .logo svg {
-    width: 40px;
-    margin-right: 10px;
+    /* width: 40px;
+    margin-right: 10px; */
+    width: 30px;
+height: 30px;
+gap: 0px;
+opacity: 0px;
+
   }
 
   .logo span {
-    font-size: 1.2em;
-    font-weight: bold;
+    font-family: Switzer;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 31.68px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
   }
+  .logo span a{
+    font-family: Switzer;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 31.68px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #000000;
+    
+    
+      }
 
   .nav-links {
     display: flex;
     align-items: center;
     list-style: none;
+
   }
 
+
   .nav-links li {
-    margin: 0 10px;
+    margin: 0 15px;
   }
 
   .nav-links a {
@@ -1072,8 +1138,10 @@ li {
     font-weight: 400;
     line-height: 14px;
     text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
+
+  }
+  .flash{
+    margin-left: 40px;
   }
 
   .contact-btn {
@@ -1085,6 +1153,14 @@ li {
     font-size: 1em;
     background: transparent;
     margin-left: 20px;
+  }
+  .flash a{
+    color: #fff;
+    font-family: Switzer;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px;
+    text-align: left;
   }
   main {
     background: #ffffff;
