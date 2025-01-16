@@ -1,13 +1,15 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const hamburger = document.querySelector('.hamburger');
-    const mobileMenu = document.querySelector('.mobile-menu');
-  
-    hamburger.addEventListener('click', () => {
-      hamburger.classList.toggle('active');
-      mobileMenu.classList.toggle('active');
-    });
-  });
-  
+let menuList = document.getElementById("menuList")
+menuList.style.maxHeight = "0px"
+function toggleMenu() {
+    if (menuList.style.maxHeight == "0px") {
+        menuList.style.maxHeight = "800px"
+        
+    }else{
+        menuList.style.maxHeight = "0px"
+    }
+    
+}
+
 
 
 

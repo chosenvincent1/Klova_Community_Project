@@ -20,6 +20,15 @@ label {
   text-align: left;
 }
 /* this is the navbar section */
+.logo{
+  display: flex;
+  align-items: center;
+}
+.logo h1>a{
+color: #000;
+font-family: switzer;
+margin-left: 10px;
+}
 nav {
   padding: 15px 30px;
   display: flex;
@@ -71,6 +80,11 @@ nav ul li a {
   text-align: left;
 
   color: #fff;
+}
+.cont-btn-flash button  {
+  background-color: transparent;
+  border: 0;
+  outline: 0;
 }
 /* main section of this website */
 main {
@@ -984,6 +998,7 @@ li {
     display: flex;
     align-items: center;
   }
+ 
   .logo h1 > a {
     margin-left: 10px;
     font-family: Switzer;
@@ -1004,9 +1019,6 @@ li {
 
 /*tablet */
 @media (min-width: 769px) {
-  .mobile-menu {
-    display: none;
-  }
   .logo {
     display: flex;
     align-items: center;
@@ -1015,8 +1027,6 @@ li {
     width: 22.5px;
     height: 22.5px;
     top: 0.75px;
-    gap: 0px;
-    opacity: 0px;
   }
 }
 /* decktop section of media query */
