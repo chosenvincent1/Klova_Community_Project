@@ -22,14 +22,14 @@ nav {
   height: 70px;
   border-bottom: 1px solid #ccc;
 }
-.logo{
+.logo {
   display: flex;
   align-items: center;
 }
-.logo h1>a{
-color: #000;
-font-family: switzer;
-margin-left: 10px;
+.logo h1 > a {
+  color: #000;
+  font-family: switzer;
+  margin-left: 10px;
 }
 nav ul {
   display: flex;
@@ -73,7 +73,7 @@ nav ul li a {
 
   color: #fff;
 }
-.cont-btn-flash button  {
+.cont-btn-flash button {
   background-color: transparent;
   border: 0;
   outline: 0;
@@ -975,4 +975,3 @@ li {
     color: #7e838f;
   }
 }
-
