@@ -9,7 +9,7 @@
 </head>
 
 <body>
-  <nav class="navbar">
+  <nav>
     <div class="logo">
       <svg width="149" height="149" viewBox="0 0 149 149" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
@@ -19,45 +19,93 @@
           d="M74.4998 111.75L43.4582 130.375L12.4165 111.75V37.25L43.4582 18.625L105.542 55.875V93.125L43.4582 55.875V93.125L74.4998 111.75Z"
           fill="#FF4337" />
       </svg>
-     
-      <span> <a href="./index.html">Klovax</a></span>
+      <h1><a href="./index.html">Klovax</a></h1>
     </div>
-    <div class="hamburger">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-    <ul class="nav-links">
+    <ul id="menuList">
       <li><a href="./index.html">Home</a></li>
-      <li><a href="./contact.html">Contact</a></li>
+      <li><a href="./career.html">Careers</a></li>
       <li><a href="./faq.html">FAQ</a></li>
       <li><a href="./blog.html">Blog</a></li>
-      <li><a href="./career.html">Career</a></li>
-      <div class="flash">
+      
+      <div class="cont-btn-flash">
+      
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M9.31994 13.28H12.4099V20.48C12.4099 21.54 13.7299 22.04 14.4299 21.24L21.9999 12.64C22.6599 11.89 22.1299 10.72 21.1299 10.72H18.0399V3.51997C18.0399 2.45997 16.7199 1.95997 16.0199 2.75997L8.44994 11.36C7.79994 12.11 8.32994 13.28 9.31994 13.28Z" fill="white"/>
           <path opacity="0.4" d="M8.5 4.75H1.5C1.09 4.75 0.75 4.41 0.75 4C0.75 3.59 1.09 3.25 1.5 3.25H8.5C8.91 3.25 9.25 3.59 9.25 4C9.25 4.41 8.91 4.75 8.5 4.75Z" fill="white"/>
           <path opacity="0.4" d="M7.5 20.75H1.5C1.09 20.75 0.75 20.41 0.75 20C0.75 19.59 1.09 19.25 1.5 19.25H7.5C7.91 19.25 8.25 19.59 8.25 20C8.25 20.41 7.91 20.75 7.5 20.75Z" fill="white"/>
           <path opacity="0.4" d="M4.5 12.75H1.5C1.09 12.75 0.75 12.41 0.75 12C0.75 11.59 1.09 11.25 1.5 11.25H4.5C4.91 11.25 5.25 11.59 5.25 12C5.25 12.41 4.91 12.75 4.5 12.75Z" fill="white"/>
           </svg>
-          
-      <!-- <button class="contact-btn">
-        <a href="./contact.html">Contact Us</a>
-        </button> -->
-        <button class="contact-btn"><a href="./contact.html">Contact Us</a></button>
-       
+          <button class="contact-btn"><a href="./contact.html">Contact</a></button>
+        
       </div>
     </ul>
-   
-    <div class="mobile-menu">
-      <ul>
-        <li><a href="#">Home Page</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">FAQ</a></li>
-        <li><a href="#">Blog</a></li>
-      </ul>
+    <div class="menu-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/ onclick="toggleMenu()"></svg>
     </div>
   </nav>
+<!-- <nav>
+  <input type="checkbox" id="sidebar-active">
+  <label for="sidebar-active" class="open-sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></label>
+  <div class="link-container">
+    <label for="link-container" class="close-sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></label>
+    <a class="home-link" href="./index.html">Home</a>
+    <a href="./index.html">Home</a>
+    <a href="./index.html">Home</a>
+    <a href="./index.html">Home</a>
+    <a href="./index.html">Home</a>
+  </div>
+</nav> -->
+
+<!-- using to text the nav -->
+
+<!-- <nav class="navbar">
+  <div class="navbar-brand">
+    <a href="#">BrandName</a>
+    <button class="toggle-btn" id="toggleBtn">&#9776;</button>
+  </div>
+  <ul class="navbar-menu" id="navbarMenu">
+
+    
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#contact" class="contact-btn">Contact</a></li>
+  </ul>
+</nav> -->
+<!-- <nav class="navbar">
+  <div class="logo">
+      <svg width="149" height="149" viewBox="0 0 149 149" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M74.5002 37.25L105.542 18.625L136.583 37.25V111.75L105.542 130.375L43.4585 93.125V55.875L105.542 93.125V55.875L74.5002 37.25Z" fill="#FF4337" />
+          <path opacity="0.4" d="M74.4998 111.75L43.4582 130.375L12.4165 111.75V37.25L43.4582 18.625L105.542 55.875V93.125L43.4582 55.875V93.125L74.4998 111.75Z" fill="#FF4337" />
+      </svg>
+      <span><a href="./index.html">Klovax</a></span>
+  </div>
+
+  <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+  </div>
+
+  <ul class="nav-links" id="nav-links">
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./contact.html">Contact</a></li>
+      <li><a href="./faq.html">FAQ</a></li>
+      <li><a href="./blog.html">Blog</a></li>
+      <li><a href="./career.html">Career</a></li>
+      <li class="flash">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9.31994 13.28H12.4099V20.48C12.4099 21.54 13.7299 22.04 14.4299 21.24L21.9999 12.64C22.6599 11.89 22.1299 10.72 21.1299 10.72H18.0399V3.51997C18.0399 2.45997 16.7199 1.95997 16.0199 2.75997L8.44994 11.36C7.79994 12.11 8.32994 13.28 9.31994 13.28Z" fill="white" />
+              <path opacity="0.4" d="M8.5 4.75H1.5C1.09 4.75 0.75 4.41 0.75 4C0.75 3.59 1.09 3.25 1.5 3.25H8.5C8.91 3.25 9.25 3.59 9.25 4C9.25 4.41 8.91 4.75 8.5 4.75Z" fill="white" />
+              <path opacity="0.4" d="M7.5 20.75H1.5C1.09 20.75 0.75 20.41 0.75 20C0.75 19.59 1.09 19.25 1.5 19.25H7.5C7.91 19.25 8.25 19.59 8.25 20C8.25 20.41 7.91 20.75 7.5 20.75Z" fill="white" />
+              <path opacity="0.4" d="M4.5 12.75H1.5C1.09 12.75 0.75 12.41 0.75 12C0.75 11.59 1.09 11.25 1.5 11.25H4.5C4.91 11.25 5.25 11.59 5.25 12C5.25 12.41 4.91 12.75 4.5 12.75Z" fill="white" />
+          </svg>
+          <button class="contact-btn"><a href="./contact.html">Contact Us</a></button>
+      </li>
+  </ul>
+</nav> -->
+
+
   <!-- the page of this website -->
   <main>
     <div class="black-div">

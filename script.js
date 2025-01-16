@@ -1,11 +1,16 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const hamburger = document.querySelector('.hamburger');
-    const mobileMenu = document.querySelector('.mobile-menu');
+let menuList = document.getElementById("menuList")
+menuList.style.maxHeight = "0px"
+function toggleMenu() {
+    if (menuList.style.maxHeight == "0px") {
+        menuList.style.maxHeight = "800px"
+        
+    }else{
+        menuList.style.maxHeight = "0px"
+    }
+    
+}
 
-    hamburger.addEventListener('click', function () {
-        mobileMenu.classList.toggle('active');
-    });
-});
+
 
 function countAnimation(target, start, end, duration, suffix = "") {
     let range = end - start;
